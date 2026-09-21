@@ -1,0 +1,135 @@
+{
+  "audit_kind": "read_only_local_inventory",
+  "gpu": [
+    {
+      "index": 0,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 4685,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 1,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 2,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 3,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 4,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 5,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 6,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    },
+    {
+      "index": 7,
+      "memory_total_mib": 81920,
+      "memory_used_mib": 537,
+      "name": "NVIDIA A800-SXM4-80GB"
+    }
+  ],
+  "lam": {
+    "license_present": true,
+    "note": "File presence is not proof that a released end-to-end training recipe is runnable.",
+    "present": true,
+    "runner_python_files": [
+      "__init__.py",
+      "abstract.py"
+    ],
+    "training_entrypoints": []
+  },
+  "nersemble_v2": {
+    "available_by_sequence": {
+      "BACKGROUND": 418,
+      "EMO-1-shout+laugh": 414,
+      "EMO-2-surprise+fear": 353,
+      "EMO-3-angry+sad": 353,
+      "EMO-4-disgust+happy": 353,
+      "EXP-1-head": 418,
+      "EXP-2-eyes": 414,
+      "EXP-3-cheeks+nose": 357,
+      "EXP-4-lips": 357,
+      "EXP-5-mouth": 358,
+      "EXP-6-tongue-1": 357,
+      "EXP-7-tongue-2": 357,
+      "EXP-8-jaw-1": 358,
+      "EXP-9-jaw-2": 358,
+      "FREE": 415,
+      "GLASSES": 101,
+      "HAIR": 366,
+      "SEN-01-cramp_small_danger": 351,
+      "SEN-02-same_phrase_thirty_times": 352,
+      "SEN-03-pluck_bright_rose": 351,
+      "SEN-04-two_plus_seven": 351,
+      "SEN-05-glow_eyes_sweet_girl": 350,
+      "SEN-06-problems_wise_chief": 349,
+      "SEN-07-fond_note_friend": 350,
+      "SEN-08-clothes_and_lodging": 349,
+      "SEN-09-frown_events_bad": 349,
+      "SEN-10-port_strong_smokey": 408
+    },
+    "first_participant_ids": [
+      "017",
+      "018",
+      "024",
+      "030",
+      "031",
+      "032",
+      "033",
+      "035",
+      "036",
+      "037"
+    ],
+    "metadata_present": true,
+    "metadata_rows": 418,
+    "participant_directory_count": 418,
+    "physical_video_check": {
+      "background_jpg_files_counted": 6685,
+      "expected_sequence_directories": 9249,
+      "missing_sequence_directories": 0,
+      "mp4_files_counted": 147908,
+      "sequence_directories_with_fewer_than_16_mp4": 76
+    }
+  },
+  "paths": {
+    "lam": {
+      "path": "/data1/workspace/airulan/3dv/external/LAM",
+      "present": true
+    },
+    "nersemble_benchmark": {
+      "path": "/data1/workspace/airulan/3dv/datasets/nersemble_benchmark",
+      "present": true
+    },
+    "nersemble_v2": {
+      "path": "/data1/workspace/airulan/3dv/datasets/nersemble_v2",
+      "present": true
+    }
+  },
+  "warnings": [
+    "This audit does not validate licenses or consent terms.",
+    "This audit does not decode every video or prove dataset completeness.",
+    "Raw identifiable data must remain outside this repository."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "kind": "five_subject_three_fold_release_cross_validation",
+  "design": {
+    "subjects": [
+      "388",
+      "422",
+      "443",
+      "445",
+      "475"
+    ],
+    "camera_count_per_subject": 13,
+    "folds": 3,
+    "conditions": {
+      "hard": 0,
+      "r075": 75,
+      "free": "unbounded"
+    },
+    "gaussian_axis_cap_mm": 30,
+    "steps": 4000
+  },
+  "condition_summary": [
+    {
+      "condition": "hard",
+      "supported_heldout_psnr": 22.758817379014637,
+      "unsupported_heldout_psnr": 13.817709118252193,
+      "head_heldout_psnr": 17.269414503692737,
+      "supported_generalization_gap_db": 4.117703507893952,
+      "unsupported_generalization_gap_db": 0.6060112841073444,
+      "head_generalization_gap_db": 1.20753147900044
+    },
+    {
+      "condition": "r075",
+      "supported_heldout_psnr": 29.85903786425515,
+      "unsupported_heldout_psnr": 25.056866246589113,
+      "head_heldout_psnr": 27.16144644557742,
+      "supported_generalization_gap_db": 9.445428483058077,
+      "unsupported_generalization_gap_db": 4.395326061414866,
+      "head_generalization_gap_db": 5.871985596695396
+    },
+    {
+      "condition": "free",
+      "supported_heldout_psnr": 29.729502751588143,
+      "unsupported_heldout_psnr": 25.509106630660597,
+      "head_heldout_psnr": 27.318901592360305,
+      "supported_generalization_gap_db": 10.19269106001988,
+      "unsupported_generalization_gap_db": 6.5856041136955055,
+      "head_generalization_gap_db": 7.816862596858101
+    }
+  ],
+  "effects": {
+    "supported_bounded_minus_hard": {
+      "mean": 7.100220485240518,
+      "ci95_low": 4.686366175435408,
+      "ci95_high": 9.843629047830468,
+      "per_subject": [
+        3.613778874914434,
+        6.545270300362084,
+        12.042534879476058,
+        8.470016957956968,
+        4.829501413493045
+      ]
+    },
+    "supported_bounded_minus_free": {
+      "mean": 0.1295351126670134,
+      "ci95_low": 0.013878601905555853,
+      "ci95_high": 0.24292559385535312,
+      "per_subject": [
+        0.1853311570271039,
+        -0.09023993431436139,
+        0.05321068528916584,
+        0.17005640623543172,
+        0.32931724909772697
+      ]
+    },
+    "supported_free_minus_hard": {
+      "mean": 6.970685372573504,
+      "ci95_low": 4.498554799848348,
+      "ci95_high": 9.753623459735506,
+      "per_subject": [
+        3.4284477178873303,
+        6.635510234676445,
+        11.989324194186892,
+        8.299960551721536,
+        4.500184164395318
+      ]
+    },
+    "unsupported_bounded_minus_hard": {
+      "mean": 11.239157128336917,
+      "ci95_low": 9.268582024343763,
+      "ci95_high": 13.903653539581114,
+      "per_subject": [
+        9.290147685830204,
+        9.043751543185774,
+        12.042904046112726,
+        16.143870702869023,
+        9.675111663686858
+      ]
+    },
+    "unsupported_bounded_minus_free": {
+      "mean": -0.452240384071488,
+      "ci95_low": -0.8939349052748767,
+      "ci95_high": -0.003054378678985614,
+      "per_subject": [
+        -0.6275729041456977,
+        -1.2011553120265788,
+        0.3058352098943047,
+        -0.30520461893214446,
+        -0.4331042951473236
+      ]
+    },
+    "unsupported_free_minus_hard": {
+      "mean": 11.691397512408404,
+      "ci95_low": 10.059355990566504,
+      "ci95_high": 14.200403078319564,
+      "per_subject": [
+        9.917720589975902,
+        10.244906855212353,
+        11.737068836218421,
+        16.449075321801168,
+        10.108215958834181
+      ]
+    },
+    "head_bounded_minus_hard": {
+      "mean": 9.892031941884685,
+      "ci95_low": 7.493860603151525,
+      "ci95_high": 12.668023879098467,
+      "per_subject": [
+        6.573345574576724,
+        8.388750933288051,
+        12.110104637933745,
+        14.421028096966843,
+        7.966930466658063
+      ]
+    },
+    "head_bounded_minus_free": {
+      "mean": -0.15745514678288258,
+      "ci95_low": -0.45701195749251866,
+      "ci95_high": 0.08298320697422312,
+      "per_subject": [
+        -0.0871997249401737,
+        -0.7035534458607486,
+        0.20571929899230312,
+        -0.08012439101549163,
+        -0.12211747109030213
+      ]
+    },
+    "head_free_minus_hard": {
+      "mean": 10.049487088667567,
+      "ci95_low": 7.718298170735865,
+      "ci95_high": 12.699378148127362,
+      "per_subject": [
+        6.660545299516897,
+        9.0923043791488,
+        11.904385338941442,
+        14.501152487982335,
+        8.089047937748365
+      ]
+    }
+  },
+  "per_subject_optimal_counts": {
+    "supported": {
+      "hard": 0,
+      "r075": 4,
+      "free": 1
+    },
+    "unsupported": {
+      "hard": 0,
+      "r075": 1,
+      "free": 4
+    },
+    "head": {
+      "hard": 0,
+      "r075": 1,
+      "free": 4
+    }
+  },
+  "scope": "Subject bootstrap is descriptive with n=5; regions are FLAME-distance bands."
+}

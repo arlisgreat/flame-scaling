@@ -1,0 +1,25 @@
+ci_high,ci_low,comparison,high_n_id,identity_count,low_n_id,metric,n_obs,region,release_advantage_change,seed_aggregation
+2.6003918347785104,1.2980856881485638,adaptive,384,20,8,masked_psnr,1,head_foreground,1.9348091879610199,paired gaps averaged within identity across seeds
+3.1112951881947954,1.7329370814278975,released,384,20,8,masked_psnr,1,head_foreground,2.4132284771499295,paired gaps averaged within identity across seeds
+2.2447146318890447,0.8430615227875589,adaptive,384,20,8,masked_psnr,1,head_supported,1.446742904997969,paired gaps averaged within identity across seeds
+2.0768383054783985,0.9306141937522672,released,384,20,8,masked_psnr,1,head_supported,1.499479162957544,paired gaps averaged within identity across seeds
+3.6035240654686755,1.236462319562228,adaptive,384,20,8,masked_psnr,1,head_unsupported,2.425815922157949,paired gaps averaged within identity across seeds
+4.650707590989391,2.240673432966392,released,384,20,8,masked_psnr,1,head_unsupported,3.4266628598573154,paired gaps averaged within identity across seeds
+4.702277504180771,3.0181879919009797,adaptive,384,20,8,masked_psnr,1,torso_outside_head_roi,3.9180183739352166,paired gaps averaged within identity across seeds
+5.667304069040851,3.600458177705262,released,384,20,8,masked_psnr,1,torso_outside_head_roi,4.696584168305226,paired gaps averaged within identity across seeds
+2.749848912377461,1.4522607170476924,adaptive,384,20,8,masked_psnr,4,head_foreground,2.1037151434032966,paired gaps averaged within identity across seeds
+3.25314050219426,1.854836353345106,released,384,20,8,masked_psnr,4,head_foreground,2.553985359083616,paired gaps averaged within identity across seeds
+2.0242358122473125,0.6605659383815142,adaptive,384,20,8,masked_psnr,4,head_supported,1.2573425257827107,paired gaps averaged within identity across seeds
+2.0906235672514546,0.9018106231019718,released,384,20,8,masked_psnr,4,head_supported,1.477343069159828,paired gaps averaged within identity across seeds
+4.071576507225197,1.6891367850409216,adaptive,384,20,8,masked_psnr,4,head_unsupported,2.8791178567062765,paired gaps averaged within identity across seeds
+4.748709146137819,2.4566861946011413,released,384,20,8,masked_psnr,4,head_unsupported,3.6095332567105474,paired gaps averaged within identity across seeds
+4.375114733911406,2.7586006568769124,adaptive,384,20,8,masked_psnr,4,torso_outside_head_roi,3.568015870929225,paired gaps averaged within identity across seeds
+5.11112568361622,3.2726798940225725,released,384,20,8,masked_psnr,4,torso_outside_head_roi,4.200101841599218,paired gaps averaged within identity across seeds
+2.8354196741601227,1.5213895194999056,adaptive,384,20,8,masked_psnr,8,head_foreground,2.1792071219636995,paired gaps averaged within identity across seeds
+3.2449332449379797,1.8592231291027892,released,384,20,8,masked_psnr,8,head_foreground,2.5483740551389693,paired gaps averaged within identity across seeds
+2.1171342414337047,0.8063200076809978,adaptive,384,20,8,masked_psnr,8,head_supported,1.3958395873825844,paired gaps averaged within identity across seeds
+2.100467856582177,0.9718114431869195,released,384,20,8,masked_psnr,8,head_supported,1.5128746729467373,paired gaps averaged within identity across seeds
+4.239156058592564,1.7681033059326292,adaptive,384,20,8,masked_psnr,8,head_unsupported,2.9670639019906453,paired gaps averaged within identity across seeds
+4.802522071157772,2.5346546037102433,released,384,20,8,masked_psnr,8,head_unsupported,3.6926867952525946,paired gaps averaged within identity across seeds
+4.455870237793558,2.807764718873115,adaptive,384,20,8,masked_psnr,8,torso_outside_head_roi,3.6394138466277655,paired gaps averaged within identity across seeds
+5.06746918945706,3.243041676376328,released,384,20,8,masked_psnr,8,torso_outside_head_roi,4.14429834278647,paired gaps averaged within identity across seeds

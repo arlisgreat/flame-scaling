@@ -1,0 +1,10 @@
+{
+  "dataset_root": "/data1/workspace/airulan/3dv/datasets/nersemble_benchmark/nvs",
+  "cases": [
+    {"subject": "388", "sequence": "GLASSES", "frame": 0, "stress_region": "glasses_hair_beard"},
+    {"subject": "422", "sequence": "EXP-2-eyes", "frame": 0, "stress_region": "eyes"},
+    {"subject": "443", "sequence": "FREE", "frame": 0, "stress_region": "free_motion_static_frame"},
+    {"subject": "445", "sequence": "EXP-6-tongue-1", "frame": 0, "stress_region": "long_hair; tongue_not_visible_at_frame_0"},
+    {"subject": "475", "sequence": "HAIR", "frame": 0, "stress_region": "hair"}
+  ]
+}

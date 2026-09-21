@@ -1,0 +1,15 @@
+{"step": 1, "loss": 0.20899923145771027, "rgb_l1": 0.17553816735744476, "alpha_l1": 0.1595969945192337, "background_leak": 0.023486502468585968, "release_regularizer": 0.0003673215687740594, "offset_magnitude_penalty": 4.030588363068688e-11, "offset_laplacian_penalty": 4.728527140153427e-13, "gate_laplacian_penalty": 1.5440340561667654e-08, "learning_rate": 0.000105, "sample_n_obs": 1, "sample_subject": "313", "mean_offset_mm": 0.0009512196411378682, "mean_gate": 0.12244001030921936, "elapsed_seconds": 2.3902430534362793, "validation_foreground_mae": 0.12141498178243637}
+{"step": 2, "loss": 0.16009581089019775, "rgb_l1": 0.12828385829925537, "alpha_l1": 0.14758414030075073, "background_leak": 0.038579296320676804, "release_regularizer": 0.0003661568043753505, "offset_magnitude_penalty": 2.984136671102533e-08, "offset_laplacian_penalty": 2.9884892303877475e-12, "gate_laplacian_penalty": 1.4508102275101464e-08, "learning_rate": 1e-05, "sample_n_obs": 1, "sample_subject": "260", "mean_offset_mm": 0.02591118775308132, "mean_gate": 0.12205168604850769, "elapsed_seconds": 2.4148073196411133, "validation_foreground_mae": 0.1213645488023758}
+/data1/workspace/airulan/conda_envs/dexbotic_oft_fix/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/data1/workspace/airulan/conda_envs/dexbotic_oft_fix/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+{
+  "output": "artifacts/smoke/identity_head_target_v1",
+  "method": "adaptive",
+  "n_id": 8,
+  "best_step": 2,
+  "best_validation_foreground_mae": 0.1213645488023758,
+  "test_row_count": 98,
+  "runtime_seconds": 3.140737533569336
+}

@@ -1,0 +1,241 @@
+{
+  "kind": "single_subject_real_tongue_release_ladder",
+  "case": {
+    "subject": "017",
+    "sequence": "EXP-6-tongue-1",
+    "frame": 182,
+    "views": 16,
+    "steps": 4000,
+    "resolution": [
+      128,
+      88
+    ]
+  },
+  "mask": {
+    "method": "mouth_aligned_geometry_candidate_plus_color_guided_grabcut",
+    "status": "exploratory_reviewed_roi_not_semantic_ground_truth",
+    "candidate_point_count": 2715,
+    "local_box_m": {
+      "abs_lateral": 0.06,
+      "up": [
+        -0.09,
+        0.035
+      ],
+      "forward": [
+        -0.02,
+        0.1
+      ],
+      "distance_to_flame": [
+        0.008,
+        0.11
+      ]
+    },
+    "per_camera": [
+      {
+        "camera_id": "222200042",
+        "candidate_pixels": 4728,
+        "seed_pixels": 513,
+        "tongue_core_pixels": 662
+      },
+      {
+        "camera_id": "222200044",
+        "candidate_pixels": 4062,
+        "seed_pixels": 1139,
+        "tongue_core_pixels": 1405
+      },
+      {
+        "camera_id": "222200046",
+        "candidate_pixels": 4570,
+        "seed_pixels": 983,
+        "tongue_core_pixels": 1223
+      },
+      {
+        "camera_id": "222200040",
+        "candidate_pixels": 5120,
+        "seed_pixels": 2195,
+        "tongue_core_pixels": 2504
+      },
+      {
+        "camera_id": "222200036",
+        "candidate_pixels": 5225,
+        "seed_pixels": 1274,
+        "tongue_core_pixels": 1657
+      },
+      {
+        "camera_id": "222200048",
+        "candidate_pixels": 4895,
+        "seed_pixels": 2685,
+        "tongue_core_pixels": 2998
+      },
+      {
+        "camera_id": "220700191",
+        "candidate_pixels": 5531,
+        "seed_pixels": 1452,
+        "tongue_core_pixels": 1960
+      },
+      {
+        "camera_id": "222200041",
+        "candidate_pixels": 5175,
+        "seed_pixels": 3134,
+        "tongue_core_pixels": 3485
+      },
+      {
+        "camera_id": "222200037",
+        "candidate_pixels": 5581,
+        "seed_pixels": 1328,
+        "tongue_core_pixels": 1893
+      },
+      {
+        "camera_id": "222200038",
+        "candidate_pixels": 5146,
+        "seed_pixels": 2861,
+        "tongue_core_pixels": 3230
+      },
+      {
+        "camera_id": "222200047",
+        "candidate_pixels": 5147,
+        "seed_pixels": 998,
+        "tongue_core_pixels": 1504
+      },
+      {
+        "camera_id": "222200043",
+        "candidate_pixels": 4807,
+        "seed_pixels": 2305,
+        "tongue_core_pixels": 2686
+      },
+      {
+        "camera_id": "222200049",
+        "candidate_pixels": 5085,
+        "seed_pixels": 748,
+        "tongue_core_pixels": 1140
+      },
+      {
+        "camera_id": "222200039",
+        "candidate_pixels": 4828,
+        "seed_pixels": 1724,
+        "tongue_core_pixels": 2081
+      },
+      {
+        "camera_id": "222200045",
+        "candidate_pixels": 4219,
+        "seed_pixels": 615,
+        "tongue_core_pixels": 672
+      },
+      {
+        "camera_id": "221501007",
+        "candidate_pixels": 4220,
+        "seed_pixels": 283,
+        "tongue_core_pixels": 272
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "directory": "hard",
+      "radius_mm": 0.0,
+      "tongue_core_psnr": 23.910162969191074,
+      "tongue_core_mae": 0.04440928674285325,
+      "supported_psnr": 24.035995394443532,
+      "unsupported_psnr": 11.447235670410603,
+      "head_psnr": 14.572895637691174,
+      "unsupported_geometry_mm": 48.08436484239062,
+      "mean_offset_mm": 0.0
+    },
+    {
+      "directory": "r010",
+      "radius_mm": 10.0,
+      "tongue_core_psnr": 23.34327545364837,
+      "tongue_core_mae": 0.045166471795948016,
+      "supported_psnr": 26.55946288855526,
+      "unsupported_psnr": 13.24092584680761,
+      "head_psnr": 16.391907528709535,
+      "unsupported_geometry_mm": 42.46631701512455,
+      "mean_offset_mm": 9.844176292419434
+    },
+    {
+      "directory": "r025",
+      "radius_mm": 25.0,
+      "tongue_core_psnr": 27.84619456514421,
+      "tongue_core_mae": 0.02703464460005018,
+      "supported_psnr": 31.87554211965225,
+      "unsupported_psnr": 17.738373029367317,
+      "head_psnr": 20.909410361327513,
+      "unsupported_geometry_mm": 32.25784558676015,
+      "mean_offset_mm": 22.537860870361328
+    },
+    {
+      "directory": "r050",
+      "radius_mm": 50.0,
+      "tongue_core_psnr": 31.072676467322495,
+      "tongue_core_mae": 0.01881217768869265,
+      "supported_psnr": 34.26713897682704,
+      "unsupported_psnr": 28.0993858469028,
+      "head_psnr": 30.21701634015438,
+      "unsupported_geometry_mm": 20.255483858942668,
+      "mean_offset_mm": 36.995452880859375
+    },
+    {
+      "directory": "r075",
+      "radius_mm": 75.0,
+      "tongue_core_psnr": 32.14731426025148,
+      "tongue_core_mae": 0.015735429390439384,
+      "supported_psnr": 34.173999779035746,
+      "unsupported_psnr": 33.22147570519428,
+      "head_psnr": 33.52472489989403,
+      "unsupported_geometry_mm": 16.62505996321847,
+      "mean_offset_mm": 45.275875091552734
+    },
+    {
+      "directory": "r100",
+      "radius_mm": 100.0,
+      "tongue_core_psnr": 34.281189376328015,
+      "tongue_core_mae": 0.01378192776001578,
+      "supported_psnr": 35.49344634841894,
+      "unsupported_psnr": 35.23301709675902,
+      "head_psnr": 35.08424225018965,
+      "unsupported_geometry_mm": 15.406969919826361,
+      "mean_offset_mm": 51.661895751953125
+    },
+    {
+      "directory": "r150",
+      "radius_mm": 150.0,
+      "tongue_core_psnr": 34.4917334534865,
+      "tongue_core_mae": 0.013297834897527276,
+      "supported_psnr": 35.7068067415275,
+      "unsupported_psnr": 37.145220710649404,
+      "head_psnr": 36.13941690470344,
+      "unsupported_geometry_mm": 15.307271412370298,
+      "mean_offset_mm": 58.31088638305664
+    },
+    {
+      "directory": "r200",
+      "radius_mm": 200.0,
+      "tongue_core_psnr": 34.17338266400063,
+      "tongue_core_mae": 0.014021510008303538,
+      "supported_psnr": 35.576428223604495,
+      "unsupported_psnr": 38.12666593131209,
+      "head_psnr": 36.437614765459294,
+      "unsupported_geometry_mm": 15.717688334261428,
+      "mean_offset_mm": 60.631622314453125
+    },
+    {
+      "directory": "free",
+      "radius_mm": -1.0,
+      "tongue_core_psnr": 34.51708739310173,
+      "tongue_core_mae": 0.013125491467152202,
+      "supported_psnr": 35.67535199887231,
+      "unsupported_psnr": 38.352320711960154,
+      "head_psnr": 36.571149573448196,
+      "unsupported_geometry_mm": 14.43428851387325,
+      "mean_offset_mm": 63.1820182800293
+    }
+  ],
+  "contrasts_db": {
+    "unsupported_free_minus_hard": 26.90508504154955,
+    "tongue_core_free_minus_hard": 10.606924423910659,
+    "unsupported_r100_minus_r050": 7.133631249856222,
+    "unsupported_free_minus_r200": 0.225654780648064,
+    "tongue_core_free_minus_r200": 0.3437047291011055
+  },
+  "scope": "Static all-view oracle optimization. It diagnoses representational reach, not held-out-view generalization, correspondence, animation binding, or tracker quality."
+}

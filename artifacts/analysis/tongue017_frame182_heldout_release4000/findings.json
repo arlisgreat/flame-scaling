@@ -1,0 +1,450 @@
+{
+  "kind": "single_subject_real_tongue_release_ladder",
+  "case": {
+    "subject": "017",
+    "sequence": "EXP-6-tongue-1",
+    "frame": 182,
+    "views": 16,
+    "steps": 4000,
+    "resolution": [
+      128,
+      88
+    ],
+    "train_camera_ids": [
+      "222200042",
+      "222200044",
+      "222200036",
+      "222200048",
+      "220700191",
+      "222200041",
+      "222200037",
+      "222200038",
+      "222200047",
+      "222200043",
+      "222200045",
+      "221501007"
+    ],
+    "heldout_camera_ids": [
+      "222200046",
+      "222200040",
+      "222200049",
+      "222200039"
+    ]
+  },
+  "mask": {
+    "method": "mediapipe_mouth_corners_plus_tongue_attracted_chin_landmark_polygon",
+    "status": "exploratory_reviewed_roi_not_semantic_ground_truth",
+    "polygon_tip_half_width_fraction": 0.28,
+    "excluded_from_scaffold_fit": [
+      "chin_landmark_152",
+      "lower_lip_landmark_14"
+    ],
+    "per_camera": [
+      {
+        "camera_id": "222200042",
+        "oral_protrusion_pixels": 289,
+        "mouth_left_xy": [
+          39.99129939079285,
+          154.1521453857422
+        ],
+        "mouth_right_xy": [
+          57.17970943450928,
+          161.5760498046875
+        ],
+        "tip_proxy_xy": [
+          48.31974411010742,
+          179.0399932861328
+        ]
+      },
+      {
+        "camera_id": "222200044",
+        "oral_protrusion_pixels": 388,
+        "mouth_left_xy": [
+          18.06499457359314,
+          140.13450622558594
+        ],
+        "mouth_right_xy": [
+          36.19313097000122,
+          138.2390899658203
+        ],
+        "tip_proxy_xy": [
+          21.079688787460327,
+          169.3756103515625
+        ]
+      },
+      {
+        "camera_id": "222200046",
+        "oral_protrusion_pixels": 486,
+        "mouth_left_xy": [
+          53.477169036865234,
+          171.75711059570312
+        ],
+        "mouth_right_xy": [
+          78.96268367767334,
+          174.3953857421875
+        ],
+        "tip_proxy_xy": [
+          64.89475059509277,
+          194.93246459960938
+        ]
+      },
+      {
+        "camera_id": "222200040",
+        "oral_protrusion_pixels": 582,
+        "mouth_left_xy": [
+          56.424116134643555,
+          154.15646362304688
+        ],
+        "mouth_right_xy": [
+          79.1904149055481,
+          149.6896209716797
+        ],
+        "tip_proxy_xy": [
+          67.39058351516724,
+          181.33633422851562
+        ]
+      },
+      {
+        "camera_id": "222200036",
+        "oral_protrusion_pixels": 528,
+        "mouth_left_xy": [
+          48.83662271499634,
+          156.8336181640625
+        ],
+        "mouth_right_xy": [
+          75.95708990097046,
+          157.28675842285156
+        ],
+        "tip_proxy_xy": [
+          62.699347496032715,
+          179.87380981445312
+        ]
+      },
+      {
+        "camera_id": "222200048",
+        "oral_protrusion_pixels": 659,
+        "mouth_left_xy": [
+          48.34409236907959,
+          139.01634216308594
+        ],
+        "mouth_right_xy": [
+          74.41358757019043,
+          133.59600830078125
+        ],
+        "tip_proxy_xy": [
+          62.94944429397583,
+          166.68856811523438
+        ]
+      },
+      {
+        "camera_id": "220700191",
+        "oral_protrusion_pixels": 623,
+        "mouth_left_xy": [
+          58.81366014480591,
+          151.6897735595703
+        ],
+        "mouth_right_xy": [
+          87.48087120056152,
+          151.30877685546875
+        ],
+        "tip_proxy_xy": [
+          73.60629224777222,
+          177.4020233154297
+        ]
+      },
+      {
+        "camera_id": "222200041",
+        "oral_protrusion_pixels": 793,
+        "mouth_left_xy": [
+          61.43664741516113,
+          127.93594360351562
+        ],
+        "mouth_right_xy": [
+          91.01086521148682,
+          123.77375030517578
+        ],
+        "tip_proxy_xy": [
+          78.85695600509644,
+          157.4708709716797
+        ]
+      },
+      {
+        "camera_id": "222200037",
+        "oral_protrusion_pixels": 602,
+        "mouth_left_xy": [
+          71.23322343826294,
+          155.92539978027344
+        ],
+        "mouth_right_xy": [
+          99.75400924682617,
+          153.6107177734375
+        ],
+        "tip_proxy_xy": [
+          86.7620415687561,
+          179.423583984375
+        ]
+      },
+      {
+        "camera_id": "222200038",
+        "oral_protrusion_pixels": 767,
+        "mouth_left_xy": [
+          74.08001852035522,
+          153.66551208496094
+        ],
+        "mouth_right_xy": [
+          103.61877346038818,
+          150.03150939941406
+        ],
+        "tip_proxy_xy": [
+          91.59135246276855,
+          181.52679443359375
+        ]
+      },
+      {
+        "camera_id": "222200047",
+        "oral_protrusion_pixels": 531,
+        "mouth_left_xy": [
+          92.2162036895752,
+          156.87196350097656
+        ],
+        "mouth_right_xy": [
+          118.1005744934082,
+          153.47401428222656
+        ],
+        "tip_proxy_xy": [
+          106.79010009765625,
+          178.86215209960938
+        ]
+      },
+      {
+        "camera_id": "222200043",
+        "oral_protrusion_pixels": 623,
+        "mouth_left_xy": [
+          91.25782012939453,
+          148.6955108642578
+        ],
+        "mouth_right_xy": [
+          117.81003189086914,
+          146.10519409179688
+        ],
+        "tip_proxy_xy": [
+          107.55858612060547,
+          174.53578186035156
+        ]
+      },
+      {
+        "camera_id": "222200049",
+        "oral_protrusion_pixels": 417,
+        "mouth_left_xy": [
+          91.92250347137451,
+          161.17803955078125
+        ],
+        "mouth_right_xy": [
+          115.54650402069092,
+          156.2787628173828
+        ],
+        "tip_proxy_xy": [
+          105.91995143890381,
+          177.9364776611328
+        ]
+      },
+      {
+        "camera_id": "222200039",
+        "oral_protrusion_pixels": 485,
+        "mouth_left_xy": [
+          93.42008399963379,
+          142.3719940185547
+        ],
+        "mouth_right_xy": [
+          115.89657974243164,
+          141.01925659179688
+        ],
+        "tip_proxy_xy": [
+          108.05302047729492,
+          166.79371643066406
+        ]
+      },
+      {
+        "camera_id": "222200045",
+        "oral_protrusion_pixels": 291,
+        "mouth_left_xy": [
+          112.85617351531982,
+          134.02349853515625
+        ],
+        "mouth_right_xy": [
+          130.89084815979004,
+          130.83059692382812
+        ],
+        "tip_proxy_xy": [
+          128.23912239074707,
+          150.93942260742188
+        ]
+      },
+      {
+        "camera_id": "221501007",
+        "oral_protrusion_pixels": 377,
+        "mouth_left_xy": [
+          117.27313232421875,
+          157.76959228515625
+        ],
+        "mouth_right_xy": [
+          138.15474891662598,
+          149.83953857421875
+        ],
+        "tip_proxy_xy": [
+          128.53455352783203,
+          174.92526245117188
+        ]
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "directory": "hard",
+      "radius_mm": 0.0,
+      "oral_protrusion_psnr": 31.25560053798742,
+      "oral_protrusion_mae": 0.023289559283807507,
+      "oral_train_psnr": 33.07746434142155,
+      "oral_heldout_psnr": 25.790009127685003,
+      "supported_psnr": 23.12663969076764,
+      "unsupported_psnr": 11.736991758692199,
+      "unsupported_train_psnr": 11.633627573877426,
+      "unsupported_heldout_psnr": 12.047084313136512,
+      "head_psnr": 14.19582123036701,
+      "unsupported_geometry_mm": 44.96509678218222,
+      "mean_offset_mm": 0.0
+    },
+    {
+      "directory": "r010",
+      "radius_mm": 10.0,
+      "oral_protrusion_psnr": 33.01731729494194,
+      "oral_protrusion_mae": 0.019916733703899438,
+      "oral_train_psnr": 34.87356618263446,
+      "oral_heldout_psnr": 27.448570631864367,
+      "supported_psnr": 29.38121227462886,
+      "unsupported_psnr": 14.312781232082752,
+      "unsupported_train_psnr": 14.23083666622563,
+      "unsupported_heldout_psnr": 14.558614929654123,
+      "head_psnr": 16.804769528194008,
+      "unsupported_geometry_mm": 39.63566808326389,
+      "mean_offset_mm": 9.793279647827148
+    },
+    {
+      "directory": "r025",
+      "radius_mm": 25.0,
+      "oral_protrusion_psnr": 33.80168910133467,
+      "oral_protrusion_mae": 0.019078722917725978,
+      "oral_train_psnr": 36.08903178427129,
+      "oral_heldout_psnr": 26.939661052524794,
+      "supported_psnr": 32.999944538870466,
+      "unsupported_psnr": 19.38690947748053,
+      "unsupported_train_psnr": 19.328601158630445,
+      "unsupported_heldout_psnr": 19.561834434030775,
+      "head_psnr": 21.73587207566167,
+      "unsupported_geometry_mm": 31.928109391509768,
+      "mean_offset_mm": 21.324583053588867
+    },
+    {
+      "directory": "r050",
+      "radius_mm": 50.0,
+      "oral_protrusion_psnr": 33.62436002437775,
+      "oral_protrusion_mae": 0.01924997771747918,
+      "oral_train_psnr": 35.73501694391936,
+      "oral_heldout_psnr": 27.292389265752934,
+      "supported_psnr": 35.03745970609408,
+      "unsupported_psnr": 28.53705529272584,
+      "unsupported_train_psnr": 29.097267412608314,
+      "unsupported_heldout_psnr": 26.856418933078416,
+      "head_psnr": 30.10185220259954,
+      "unsupported_geometry_mm": 22.33469455938632,
+      "mean_offset_mm": 32.76001739501953
+    },
+    {
+      "directory": "r075",
+      "radius_mm": 75.0,
+      "oral_protrusion_psnr": 33.850706549701385,
+      "oral_protrusion_mae": 0.01917946155915802,
+      "oral_train_psnr": 36.06769549122907,
+      "oral_heldout_psnr": 27.199739725118377,
+      "supported_psnr": 35.35259087053308,
+      "unsupported_psnr": 32.71019622705393,
+      "unsupported_train_psnr": 34.33465897307807,
+      "unsupported_heldout_psnr": 27.836807988981487,
+      "head_psnr": 33.475257565818254,
+      "unsupported_geometry_mm": 18.267974630593397,
+      "mean_offset_mm": 39.055908203125
+    },
+    {
+      "directory": "r100",
+      "radius_mm": 100.0,
+      "oral_protrusion_psnr": 33.93258129025058,
+      "oral_protrusion_mae": 0.018910364725072494,
+      "oral_train_psnr": 36.13022224113052,
+      "oral_heldout_psnr": 27.339658437610765,
+      "supported_psnr": 35.554228885454194,
+      "unsupported_psnr": 34.07441177400077,
+      "unsupported_train_psnr": 36.12898712815592,
+      "unsupported_heldout_psnr": 27.91068571153533,
+      "head_psnr": 34.42293722164992,
+      "unsupported_geometry_mm": 17.34800165044044,
+      "mean_offset_mm": 43.01557159423828
+    },
+    {
+      "directory": "r150",
+      "radius_mm": 150.0,
+      "oral_protrusion_psnr": 33.47361906054475,
+      "oral_protrusion_mae": 0.020014059191259495,
+      "oral_train_psnr": 35.82350097698384,
+      "oral_heldout_psnr": 26.423973311227506,
+      "supported_psnr": 35.76993329090392,
+      "unsupported_psnr": 35.165061628424255,
+      "unsupported_train_psnr": 37.44929522650957,
+      "unsupported_heldout_psnr": 28.312360834168267,
+      "head_psnr": 35.264584979914034,
+      "unsupported_geometry_mm": 16.411189337178953,
+      "mean_offset_mm": 47.46488571166992
+    },
+    {
+      "directory": "r200",
+      "radius_mm": 200.0,
+      "oral_protrusion_psnr": 33.69058936017042,
+      "oral_protrusion_mae": 0.01953469628106656,
+      "oral_train_psnr": 35.970429927015694,
+      "oral_heldout_psnr": 26.85106765963461,
+      "supported_psnr": 35.59785298020621,
+      "unsupported_psnr": 35.02174556268344,
+      "unsupported_train_psnr": 37.194024114276466,
+      "unsupported_heldout_psnr": 28.50490990790439,
+      "head_psnr": 35.05122657097884,
+      "unsupported_geometry_mm": 17.17934681769331,
+      "mean_offset_mm": 49.36048126220703
+    },
+    {
+      "directory": "free",
+      "radius_mm": -1.0,
+      "oral_protrusion_psnr": 33.7156217326215,
+      "oral_protrusion_mae": 0.019885732976842083,
+      "oral_train_psnr": 36.0573078258932,
+      "oral_heldout_psnr": 26.690563452806416,
+      "supported_psnr": 35.76643530676077,
+      "unsupported_psnr": 35.47143390876252,
+      "unsupported_train_psnr": 37.727576539563394,
+      "unsupported_heldout_psnr": 28.703006016359915,
+      "head_psnr": 35.41118877379728,
+      "unsupported_geometry_mm": 17.580376783878613,
+      "mean_offset_mm": 51.543155670166016
+    }
+  ],
+  "contrasts_db": {
+    "unsupported_free_minus_hard": 23.734442150070322,
+    "oral_protrusion_free_minus_hard": 2.4600211946340806,
+    "unsupported_r100_minus_r050": 5.537356481274934,
+    "unsupported_free_minus_r200": 0.44968834607907837,
+    "oral_protrusion_free_minus_r200": 0.025032372451079254
+  },
+  "scope": "Static 12-train-camera/4-held-out-camera optimization.",
+  "regional_optima": {
+    "oral_heldout": "r010",
+    "unsupported_heldout": "free"
+  }
+}

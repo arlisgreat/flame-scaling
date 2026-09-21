@@ -1,0 +1,62 @@
+{
+  "kind": "identity_scaling_post_primary_control_registry",
+  "frozen_before_followup_results": true,
+  "date": "2026-07-16",
+  "primary_result_sha256": "ffe904be7f6075719d728221c32dbd93e2e18659d6ef34be9ea0f67b1118e465",
+  "post_audit_head_roi_result_sha256": "8013f00f089627a038f7b5b1e75f8cc796413a712d3705cc8dcc2bc4e2fdb66c",
+  "launcher_sha256": "510d03e397bf0fe9ae078f5c8ea334f6bed253430d51e15c381005648089166f",
+  "common_contract": {
+    "training_seeds": [0, 1, 2],
+    "n_obs": [1, 4, 8],
+    "test_identities": 20,
+    "identity_cluster_bootstrap_replicates": 10000,
+    "checkpoint_selection": "seven fixed validation identities only",
+    "unchanged_factors": [
+      "nested identity split",
+      "camera prefixes",
+      "5023 semantic slots",
+      "observation encoder and loss",
+      "target-view isolation",
+      "LPIPS weights"
+    ]
+  },
+  "controls": {
+    "covariance": {
+      "family": "identity_scaling20k_scale3_v1",
+      "n_id": [8, 384],
+      "methods": ["hard", "adaptive150", "released150"],
+      "fixed_isotropic_scale_mm": 3.0,
+      "run_count": 18,
+      "falsifier": "The head-foreground crossover or unsupported interaction disappears or reverses at 3 mm."
+    },
+    "capacity": {
+      "families": ["identity_scaling20k_h64_v1", "identity_scaling20k_h512_v1"],
+      "n_id": [8, 384],
+      "hidden_dimensions": [64, 512],
+      "total_parameters": [615464, 1213992],
+      "primary_total_parameters": 651816,
+      "methods": ["hard", "adaptive150", "released150"],
+      "run_count": 36,
+      "falsifier": "Hard catches up at high capacity while released gains vanish, implying an ordinary capacity bottleneck."
+    },
+    "adaptive_release_dose": {
+      "families": ["identity_scaling20k_adaptive_r30_v1", "identity_scaling20k_adaptive_r75_v1"],
+      "n_id": [8, 384],
+      "adaptive_radius_mm": [30, 75],
+      "adaptive150_anchor": "primary matrix",
+      "hard_and_released150_anchors": "primary matrix",
+      "run_count": 12,
+      "falsifier": "Adaptive points lie below the hard-to-released quality/displacement frontier across regions."
+    },
+    "converged_budget": {
+      "family": "identity_scaling60k_v1",
+      "n_id": [384],
+      "methods": ["hard", "adaptive150", "released150"],
+      "steps": 60000,
+      "run_count": 9,
+      "falsifier": "The 20k interaction is materially changed after 3x training, indicating high-data undertraining."
+    }
+  },
+  "total_followup_runs": 75,
+  "interpretation_policy": "All null or reversed controls are retained; controls may narrow or overturn the primary static-proxy claim."
+}

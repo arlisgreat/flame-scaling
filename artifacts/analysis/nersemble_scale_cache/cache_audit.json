@@ -1,0 +1,224 @@
+{
+  "kind": "nersemble_identity_scale_cache_audit",
+  "expected_subject_count": 415,
+  "complete_subject_count": 415,
+  "missing_subjects": [],
+  "integrity_failure_count": 0,
+  "thresholds_for_sensitivity_flag_only": {
+    "triangulation_median_px": 3.0,
+    "fit_mean_mm": 8.0,
+    "minimum_usable_views": 12
+  },
+  "statistics": {
+    "triangulation_median_px": {
+      "count": 415,
+      "mean": 1.8988332117896483,
+      "median": 1.7597582340240479,
+      "p90": 2.0891521215438846,
+      "p95": 2.188291108608246,
+      "max": 48.12199020385742
+    },
+    "fit_mean_mm": {
+      "count": 415,
+      "mean": 3.7256868712873343,
+      "median": 3.429910182952881,
+      "p90": 4.631886768341065,
+      "p95": 5.771808862686156,
+      "max": 9.632746696472168
+    },
+    "fit_median_mm": {
+      "count": 415,
+      "mean": 2.1094672720116305,
+      "median": 2.0898356437683105,
+      "p90": 2.4573348999023437,
+      "p95": 2.563460946083067,
+      "max": 2.9515767097473145
+    },
+    "fit_max_mm": {
+      "count": 415,
+      "mean": 20.605687103501285,
+      "median": 14.452743530273438,
+      "p90": 37.661462402343794,
+      "p95": 51.33627929687497,
+      "max": 83.83894348144531
+    },
+    "usable_views": {
+      "count": 415,
+      "mean": 15.872289156626506,
+      "median": 16.0,
+      "p90": 16.0,
+      "p95": 16.0,
+      "max": 16.0
+    },
+    "oral_aperture_ratio": {
+      "count": 415,
+      "mean": 0.47097512772223793,
+      "median": 0.45299999955771625,
+      "p90": 0.8171687278844153,
+      "p95": 0.9392344712239616,
+      "max": 1.1172591511369903
+    }
+  },
+  "flagged_subjects": [
+    {
+      "subject": "133",
+      "triangulation_median_px": 1.8563671708106995,
+      "fit_mean_mm": 8.207429885864258,
+      "fit_median_mm": 2.2813591957092285,
+      "fit_max_mm": 68.15969848632812,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.41708024349750966,
+      "frame": 732,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm"
+      ]
+    },
+    {
+      "subject": "176",
+      "triangulation_median_px": 3.3672544956207275,
+      "fit_mean_mm": 4.120296955108643,
+      "fit_median_mm": 2.593705654144287,
+      "fit_max_mm": 15.417326927185059,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.47565150182176297,
+      "frame": 308,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "triangulation_median_px"
+      ]
+    },
+    {
+      "subject": "206",
+      "triangulation_median_px": 1.8816855549812317,
+      "fit_mean_mm": 8.02207088470459,
+      "fit_median_mm": 2.863154411315918,
+      "fit_max_mm": 69.37049865722656,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.8418435731618089,
+      "frame": 257,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm"
+      ]
+    },
+    {
+      "subject": "283",
+      "triangulation_median_px": 3.219864845275879,
+      "fit_mean_mm": 6.06074857711792,
+      "fit_median_mm": 2.062206745147705,
+      "fit_max_mm": 58.930458068847656,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.39051011714048717,
+      "frame": 358,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "triangulation_median_px"
+      ]
+    },
+    {
+      "subject": "368",
+      "triangulation_median_px": 1.9141923785209656,
+      "fit_mean_mm": 8.88300895690918,
+      "fit_median_mm": 2.0574965476989746,
+      "fit_max_mm": 75.06522369384766,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.08783257317803549,
+      "frame": 619,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm"
+      ]
+    },
+    {
+      "subject": "401",
+      "triangulation_median_px": 3.1606205701828003,
+      "fit_mean_mm": 7.671055316925049,
+      "fit_median_mm": 2.868211507797241,
+      "fit_max_mm": 72.28509521484375,
+      "usable_views": 7,
+      "oral_aperture_ratio": 0.6219611365273254,
+      "frame": 528,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "triangulation_median_px",
+        "usable_views"
+      ]
+    },
+    {
+      "subject": "446",
+      "triangulation_median_px": 48.12199020385742,
+      "fit_mean_mm": 2.6079823970794678,
+      "fit_median_mm": 1.469407081604004,
+      "fit_max_mm": 7.806153774261475,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.36538461538461536,
+      "frame": 109,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "triangulation_median_px"
+      ]
+    },
+    {
+      "subject": "472",
+      "triangulation_median_px": 2.1009016036987305,
+      "fit_mean_mm": 8.1627779006958,
+      "fit_median_mm": 1.987018346786499,
+      "fit_max_mm": 64.89234161376953,
+      "usable_views": 15,
+      "oral_aperture_ratio": 0.06466959449686117,
+      "frame": 512,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm"
+      ]
+    },
+    {
+      "subject": "475",
+      "triangulation_median_px": 1.794322907924652,
+      "fit_mean_mm": 8.911163330078125,
+      "fit_median_mm": 2.129387855529785,
+      "fit_max_mm": 73.19500732421875,
+      "usable_views": 16,
+      "oral_aperture_ratio": 0.396491158284218,
+      "frame": 204,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm"
+      ]
+    },
+    {
+      "subject": "527",
+      "triangulation_median_px": 2.1079983711242676,
+      "fit_mean_mm": 9.632746696472168,
+      "fit_median_mm": 2.8006339073181152,
+      "fit_max_mm": 83.83894348144531,
+      "usable_views": 8,
+      "oral_aperture_ratio": 0.3071475445982713,
+      "frame": 10,
+      "camera_count": 16,
+      "gaussian_count": 5023,
+      "reasons": [
+        "fit_mean_mm",
+        "usable_views"
+      ]
+    }
+  ],
+  "flagged_subject_count": 10,
+  "split_flag_counts": {
+    "train_384": 8,
+    "validation": 0,
+    "svfr_test": 1
+  },
+  "primary_analysis_policy": "Keep every pre-registered identity. Flagged thresholds define a disclosed sensitivity analysis only; no sample may be silently dropped after viewing model results.",
+  "scope_warning": "Landmark fit residual is a scaffold quality diagnostic, not ground-truth surface error. Large residuals can be localized to jaw-outline landmarks while the head scaffold remains usable."
+}

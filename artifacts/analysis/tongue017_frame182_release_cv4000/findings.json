@@ -1,0 +1,447 @@
+{
+  "kind": "four_fold_angular_cross_validated_release_curve",
+  "case": {
+    "subject": "017",
+    "sequence": "EXP-6-tongue-1",
+    "frame": 182,
+    "camera_count": 16,
+    "fold_count": 4,
+    "heldout_per_fold": 4,
+    "steps": 4000,
+    "resolution": [
+      128,
+      88
+    ]
+  },
+  "mask": {
+    "method": "mediapipe_mouth_corners_plus_tongue_attracted_chin_landmark_polygon",
+    "status": "exploratory_reviewed_roi_not_semantic_ground_truth",
+    "polygon_tip_half_width_fraction": 0.28,
+    "excluded_from_scaffold_fit": [
+      "chin_landmark_152",
+      "lower_lip_landmark_14"
+    ],
+    "per_camera": [
+      {
+        "camera_id": "222200042",
+        "oral_protrusion_pixels": 289,
+        "mouth_left_xy": [
+          39.99129939079285,
+          154.1521453857422
+        ],
+        "mouth_right_xy": [
+          57.17970943450928,
+          161.5760498046875
+        ],
+        "tip_proxy_xy": [
+          48.31974411010742,
+          179.0399932861328
+        ]
+      },
+      {
+        "camera_id": "222200044",
+        "oral_protrusion_pixels": 388,
+        "mouth_left_xy": [
+          18.06499457359314,
+          140.13450622558594
+        ],
+        "mouth_right_xy": [
+          36.19313097000122,
+          138.2390899658203
+        ],
+        "tip_proxy_xy": [
+          21.079688787460327,
+          169.3756103515625
+        ]
+      },
+      {
+        "camera_id": "222200046",
+        "oral_protrusion_pixels": 486,
+        "mouth_left_xy": [
+          53.477169036865234,
+          171.75711059570312
+        ],
+        "mouth_right_xy": [
+          78.96268367767334,
+          174.3953857421875
+        ],
+        "tip_proxy_xy": [
+          64.89475059509277,
+          194.93246459960938
+        ]
+      },
+      {
+        "camera_id": "222200040",
+        "oral_protrusion_pixels": 582,
+        "mouth_left_xy": [
+          56.424116134643555,
+          154.15646362304688
+        ],
+        "mouth_right_xy": [
+          79.1904149055481,
+          149.6896209716797
+        ],
+        "tip_proxy_xy": [
+          67.39058351516724,
+          181.33633422851562
+        ]
+      },
+      {
+        "camera_id": "222200036",
+        "oral_protrusion_pixels": 528,
+        "mouth_left_xy": [
+          48.83662271499634,
+          156.8336181640625
+        ],
+        "mouth_right_xy": [
+          75.95708990097046,
+          157.28675842285156
+        ],
+        "tip_proxy_xy": [
+          62.699347496032715,
+          179.87380981445312
+        ]
+      },
+      {
+        "camera_id": "222200048",
+        "oral_protrusion_pixels": 659,
+        "mouth_left_xy": [
+          48.34409236907959,
+          139.01634216308594
+        ],
+        "mouth_right_xy": [
+          74.41358757019043,
+          133.59600830078125
+        ],
+        "tip_proxy_xy": [
+          62.94944429397583,
+          166.68856811523438
+        ]
+      },
+      {
+        "camera_id": "220700191",
+        "oral_protrusion_pixels": 623,
+        "mouth_left_xy": [
+          58.81366014480591,
+          151.6897735595703
+        ],
+        "mouth_right_xy": [
+          87.48087120056152,
+          151.30877685546875
+        ],
+        "tip_proxy_xy": [
+          73.60629224777222,
+          177.4020233154297
+        ]
+      },
+      {
+        "camera_id": "222200041",
+        "oral_protrusion_pixels": 793,
+        "mouth_left_xy": [
+          61.43664741516113,
+          127.93594360351562
+        ],
+        "mouth_right_xy": [
+          91.01086521148682,
+          123.77375030517578
+        ],
+        "tip_proxy_xy": [
+          78.85695600509644,
+          157.4708709716797
+        ]
+      },
+      {
+        "camera_id": "222200037",
+        "oral_protrusion_pixels": 602,
+        "mouth_left_xy": [
+          71.23322343826294,
+          155.92539978027344
+        ],
+        "mouth_right_xy": [
+          99.75400924682617,
+          153.6107177734375
+        ],
+        "tip_proxy_xy": [
+          86.7620415687561,
+          179.423583984375
+        ]
+      },
+      {
+        "camera_id": "222200038",
+        "oral_protrusion_pixels": 767,
+        "mouth_left_xy": [
+          74.08001852035522,
+          153.66551208496094
+        ],
+        "mouth_right_xy": [
+          103.61877346038818,
+          150.03150939941406
+        ],
+        "tip_proxy_xy": [
+          91.59135246276855,
+          181.52679443359375
+        ]
+      },
+      {
+        "camera_id": "222200047",
+        "oral_protrusion_pixels": 531,
+        "mouth_left_xy": [
+          92.2162036895752,
+          156.87196350097656
+        ],
+        "mouth_right_xy": [
+          118.1005744934082,
+          153.47401428222656
+        ],
+        "tip_proxy_xy": [
+          106.79010009765625,
+          178.86215209960938
+        ]
+      },
+      {
+        "camera_id": "222200043",
+        "oral_protrusion_pixels": 623,
+        "mouth_left_xy": [
+          91.25782012939453,
+          148.6955108642578
+        ],
+        "mouth_right_xy": [
+          117.81003189086914,
+          146.10519409179688
+        ],
+        "tip_proxy_xy": [
+          107.55858612060547,
+          174.53578186035156
+        ]
+      },
+      {
+        "camera_id": "222200049",
+        "oral_protrusion_pixels": 417,
+        "mouth_left_xy": [
+          91.92250347137451,
+          161.17803955078125
+        ],
+        "mouth_right_xy": [
+          115.54650402069092,
+          156.2787628173828
+        ],
+        "tip_proxy_xy": [
+          105.91995143890381,
+          177.9364776611328
+        ]
+      },
+      {
+        "camera_id": "222200039",
+        "oral_protrusion_pixels": 485,
+        "mouth_left_xy": [
+          93.42008399963379,
+          142.3719940185547
+        ],
+        "mouth_right_xy": [
+          115.89657974243164,
+          141.01925659179688
+        ],
+        "tip_proxy_xy": [
+          108.05302047729492,
+          166.79371643066406
+        ]
+      },
+      {
+        "camera_id": "222200045",
+        "oral_protrusion_pixels": 291,
+        "mouth_left_xy": [
+          112.85617351531982,
+          134.02349853515625
+        ],
+        "mouth_right_xy": [
+          130.89084815979004,
+          130.83059692382812
+        ],
+        "tip_proxy_xy": [
+          128.23912239074707,
+          150.93942260742188
+        ]
+      },
+      {
+        "camera_id": "221501007",
+        "oral_protrusion_pixels": 377,
+        "mouth_left_xy": [
+          117.27313232421875,
+          157.76959228515625
+        ],
+        "mouth_right_xy": [
+          138.15474891662598,
+          149.83953857421875
+        ],
+        "tip_proxy_xy": [
+          128.53455352783203,
+          174.92526245117188
+        ]
+      }
+    ]
+  },
+  "coverage": {
+    "222200042": [
+      "fold_d"
+    ],
+    "222200044": [
+      "fold_d"
+    ],
+    "222200046": [
+      "fold_a"
+    ],
+    "222200040": [
+      "fold_a"
+    ],
+    "222200036": [
+      "fold_b"
+    ],
+    "222200048": [
+      "fold_b"
+    ],
+    "220700191": [
+      "fold_c"
+    ],
+    "222200041": [
+      "fold_c"
+    ],
+    "222200037": [
+      "fold_c"
+    ],
+    "222200038": [
+      "fold_c"
+    ],
+    "222200047": [
+      "fold_b"
+    ],
+    "222200043": [
+      "fold_b"
+    ],
+    "222200049": [
+      "fold_a"
+    ],
+    "222200039": [
+      "fold_a"
+    ],
+    "222200045": [
+      "fold_d"
+    ],
+    "221501007": [
+      "fold_d"
+    ]
+  },
+  "aggregate": [
+    {
+      "condition": "hard",
+      "radius_mm": 0.0,
+      "oral_heldout_psnr": 25.56167749463438,
+      "supported_heldout_psnr": 20.042981023281584,
+      "unsupported_heldout_psnr": 11.584424540391563,
+      "head_heldout_psnr": 13.75367104574131
+    },
+    {
+      "condition": "r010",
+      "radius_mm": 10.0,
+      "oral_heldout_psnr": 26.55862052271924,
+      "supported_heldout_psnr": 24.16936079296955,
+      "unsupported_heldout_psnr": 14.074373440087003,
+      "head_heldout_psnr": 16.238582280633175
+    },
+    {
+      "condition": "r025",
+      "radius_mm": 25.0,
+      "oral_heldout_psnr": 26.902693471602213,
+      "supported_heldout_psnr": 24.820651814867162,
+      "unsupported_heldout_psnr": 18.937315777610564,
+      "head_heldout_psnr": 20.400221709524303
+    },
+    {
+      "condition": "r050",
+      "radius_mm": 50.0,
+      "oral_heldout_psnr": 26.261923183075982,
+      "supported_heldout_psnr": 24.68240178276763,
+      "unsupported_heldout_psnr": 25.978803245826693,
+      "head_heldout_psnr": 25.28007291334451
+    },
+    {
+      "condition": "r075",
+      "radius_mm": 75.0,
+      "oral_heldout_psnr": 27.10507729308351,
+      "supported_heldout_psnr": 24.310126674896388,
+      "unsupported_heldout_psnr": 27.070465779067085,
+      "head_heldout_psnr": 25.559889940612322
+    },
+    {
+      "condition": "r100",
+      "radius_mm": 100.0,
+      "oral_heldout_psnr": 26.29686638780152,
+      "supported_heldout_psnr": 24.323537706093433,
+      "unsupported_heldout_psnr": 27.464261074352972,
+      "head_heldout_psnr": 25.67171621161411
+    },
+    {
+      "condition": "r150",
+      "radius_mm": 150.0,
+      "oral_heldout_psnr": 26.39458969104261,
+      "supported_heldout_psnr": 24.38207639531518,
+      "unsupported_heldout_psnr": 27.397619862807712,
+      "head_heldout_psnr": 25.64505432156176
+    },
+    {
+      "condition": "r200",
+      "radius_mm": 200.0,
+      "oral_heldout_psnr": 26.48284120177676,
+      "supported_heldout_psnr": 24.326430077413196,
+      "unsupported_heldout_psnr": 27.297745072707244,
+      "head_heldout_psnr": 25.65518290765534
+    },
+    {
+      "condition": "free",
+      "radius_mm": -1.0,
+      "oral_heldout_psnr": 26.476867553520336,
+      "supported_heldout_psnr": 24.547308518960854,
+      "unsupported_heldout_psnr": 27.620377699700136,
+      "head_heldout_psnr": 25.84748599417935
+    }
+  ],
+  "best_oral_condition": "r075",
+  "best_unsupported_condition": "free",
+  "pareto_conditions": [
+    "r075",
+    "r200",
+    "free"
+  ],
+  "paired_camera_bootstrap": {
+    "best_oral_minus_hard_oral": {
+      "mean": 1.543399798449134,
+      "ci95_low": 0.2620476699516833,
+      "ci95_high": 2.9052635501814614
+    },
+    "best_oral_minus_free_oral": {
+      "mean": 0.6282097395631769,
+      "ci95_low": -0.020574585785112363,
+      "ci95_high": 1.3643545719573127
+    },
+    "free_minus_best_oral_unsupported": {
+      "mean": 0.54991192063305,
+      "ci95_low": 0.07614314390990737,
+      "ci95_high": 0.9782710063092815
+    },
+    "free_minus_hard_unsupported": {
+      "mean": 16.035953159308576,
+      "ci95_low": 13.434891248498174,
+      "ci95_high": 18.507329236065296
+    },
+    "r010_minus_free_oral": {
+      "mean": 0.08175296919890451,
+      "ci95_low": -0.7628719376205209,
+      "ci95_high": 0.9292298610914886
+    },
+    "r010_minus_hard_oral": {
+      "mean": 0.9969430280848617,
+      "ci95_low": -0.050512957870704034,
+      "ci95_high": 2.058505590870647
+    }
+  },
+  "scope": "One subject/frame with exact four-fold angular camera coverage; camera bootstrap is descriptive and does not substitute for subject-level replication."
+}

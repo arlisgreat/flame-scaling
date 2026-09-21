@@ -1,0 +1,25 @@
+ci_high,ci_low,comparison,high_n_id,identity_count,low_n_id,metric,n_obs,region,release_advantage_change,seed_aggregation
+-0.0007653981966421877,-0.028327019350909234,adaptive,384,20,8,lpips_alex_spatial,1,head_foreground,-0.015049913363592427,paired gaps averaged within identity across seeds
+0.01259208460964176,-0.01442739810881606,released,384,20,8,lpips_alex_spatial,1,head_foreground,-0.000950075198465443,paired gaps averaged within identity across seeds
+-0.001383433780825261,-0.029666959325119886,adaptive,384,20,8,lpips_alex_spatial,1,head_supported,-0.015967720209964478,paired gaps averaged within identity across seeds
+0.01139050882321019,-0.016888500791521294,released,384,20,8,lpips_alex_spatial,1,head_supported,-0.0028302883799607146,paired gaps averaged within identity across seeds
+0.005022358130708535,-0.026770609261815907,adaptive,384,20,8,lpips_alex_spatial,1,head_unsupported,-0.010879575656229743,paired gaps averaged within identity across seeds
+0.027438118432708523,-0.004045174899731535,released,384,20,8,lpips_alex_spatial,1,head_unsupported,0.01202227258567348,paired gaps averaged within identity across seeds
+0.03003422326445628,-0.011280703464017158,adaptive,384,20,8,lpips_alex_spatial,1,torso_outside_head_roi,0.009508964191025551,paired gaps averaged within identity across seeds
+0.07948387581292543,0.03661473247884211,released,384,20,8,lpips_alex_spatial,1,torso_outside_head_roi,0.058066901082894154,paired gaps averaged within identity across seeds
+-0.0013293634532411645,-0.037034967195101784,adaptive,384,20,8,lpips_alex_spatial,4,head_foreground,-0.01975956347619486,paired gaps averaged within identity across seeds
+0.009159024233784244,-0.01977536996698703,released,384,20,8,lpips_alex_spatial,4,head_foreground,-0.005593015017191167,paired gaps averaged within identity across seeds
+-0.0023045544110981385,-0.03882667792335054,adaptive,384,20,8,lpips_alex_spatial,4,head_supported,-0.020863659554518518,paired gaps averaged within identity across seeds
+0.007503297831465649,-0.022319964357163675,released,384,20,8,lpips_alex_spatial,4,head_supported,-0.007674809641059793,paired gaps averaged within identity across seeds
+0.005684697824267921,-0.032394780513239164,adaptive,384,20,8,lpips_alex_spatial,4,head_unsupported,-0.01344219487462294,paired gaps averaged within identity across seeds
+0.028124824385721284,-0.00879573029280311,released,384,20,8,lpips_alex_spatial,4,head_unsupported,0.010110406696392444,paired gaps averaged within identity across seeds
+0.0373135127365609,-0.015421257317720363,adaptive,384,20,8,lpips_alex_spatial,4,torso_outside_head_roi,0.009308330945665896,paired gaps averaged within identity across seeds
+0.07748029614683388,0.02776264535935109,released,384,20,8,lpips_alex_spatial,4,torso_outside_head_roi,0.05280643689262461,paired gaps averaged within identity across seeds
+0.0007574815815473483,-0.0346600257828867,adaptive,384,20,8,lpips_alex_spatial,8,head_foreground,-0.017361963583733854,paired gaps averaged within identity across seeds
+0.007135558481957991,-0.019564414411648294,released,384,20,8,lpips_alex_spatial,8,head_foreground,-0.006397456533057014,paired gaps averaged within identity across seeds
+0.0001427390595536245,-0.035888740981668055,adaptive,384,20,8,lpips_alex_spatial,8,head_supported,-0.01874360549179651,paired gaps averaged within identity across seeds
+0.0051987216748720115,-0.022145307229950676,released,384,20,8,lpips_alex_spatial,8,head_supported,-0.008604099321320429,paired gaps averaged within identity across seeds
+0.012095414006633711,-0.025744787020581802,adaptive,384,20,8,lpips_alex_spatial,8,head_unsupported,-0.007166142529797505,paired gaps averaged within identity across seeds
+0.02876243991824612,-0.007694807836861862,released,384,20,8,lpips_alex_spatial,8,head_unsupported,0.011050699393342685,paired gaps averaged within identity across seeds
+0.03120266351509602,-0.01573800963697047,adaptive,384,20,8,lpips_alex_spatial,8,torso_outside_head_roi,0.006648571488180849,paired gaps averaged within identity across seeds
+0.07582165970830686,0.026556682487012272,released,384,20,8,lpips_alex_spatial,8,torso_outside_head_roi,0.05118588030320905,paired gaps averaged within identity across seeds

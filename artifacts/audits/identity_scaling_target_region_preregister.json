@@ -1,0 +1,56 @@
+{
+  "kind": "post_primary_preregistered_target_region_control",
+  "frozen_at": "2026-07-16",
+  "status": "frozen before implementation and before observing any target-region-control result",
+  "motivation": "The pre-registered full-frame foreground objective includes torso, clothing, and shoulders. Released queries may therefore trade supported head detail for non-head coverage. This control changes only the optimized target region.",
+  "intervention": {
+    "anchor": "Frozen identity_scaling20k_v1 full-frame objective",
+    "new_condition": "head_roi",
+    "head_roi": "Convex hull of projected FLAME face, oral, eye, scalp, and ear vertices; neck excluded; 6-pixel dilation at 128x88.",
+    "rgb_and_alpha": "Computed only inside the head envelope.",
+    "background_leak": "Computed in a local exterior ring around the head envelope so silhouette leakage remains constrained without rewarding torso reconstruction.",
+    "validation_selection": "Head-foreground MAE using the same envelope, rather than broad foreground MAE.",
+    "unchanged": [
+      "NeRSemble nested identity sets and 20 official SVFR test identities",
+      "observation counts 1, 4, and 8",
+      "three training seeds 0, 1, and 2",
+      "20,000 optimization steps and optimizer schedule",
+      "5,023 Gaussian slots",
+      "5 mm fixed isotropic covariance",
+      "hidden dimension 128 and equal total parameter count",
+      "hard, adaptive-r150, and released-r150 G_mu interventions",
+      "ordinary and post-audit head-ROI evaluation metrics"
+    ]
+  },
+  "matrix": {
+    "training_identities": [8, 384],
+    "methods": ["hard", "adaptive", "released"],
+    "seeds": [0, 1, 2],
+    "runs": 18
+  },
+  "primary_outcomes": [
+    "head_foreground masked_psnr and lpips_alex_spatial at N_obs=4",
+    "head_supported masked_psnr and lpips_alex_spatial at N_obs=4",
+    "head_unsupported masked_psnr and lpips_alex_spatial at N_obs=4",
+    "mean query displacement and region-wise displacement"
+  ],
+  "paired_inference": "Average target cameras and training seeds within each held-out identity, then perform a 10,000-sample identity bootstrap.",
+  "predictions": {
+    "allocation_confound_supported": "Relative to the full-frame anchor, head-only training reduces released-query displacement toward neck/torso, improves released head-supported quality, and weakens the released advantage on torso without eliminating its head-unsupported scaling gain.",
+    "representation_bottleneck_supported": "Even after head-only training, hard FLAME remains flat on head-unsupported content and the N_id=384 released-minus-hard head-unsupported advantage remains positive.",
+    "adaptive_release_supported": "Adaptive release attains a better head-quality versus displacement frontier than either endpoint for at least one identity scale. This is not claimed in advance if the point is dominated."
+  },
+  "falsifiers": [
+    "If released head-unsupported gains vanish under head-only training, the main result was primarily a torso-target artifact rather than a head representation ceiling.",
+    "If released head-supported loss does not improve at all under head-only training, finite-budget allocation alone is insufficient to explain the supported-detail penalty.",
+    "If hard improves head-unsupported content with N_id under the head-only objective at the same rate as released, the claimed hard-support ceiling is falsified.",
+    "If adaptive points remain dominated across both identity scales, simple scalar release gating is not an effective APR mechanism."
+  ],
+  "implementation_fingerprint": {
+    "run_identity_scaling.py_sha256": "63af95d03eb769cdb85cb64afd5483f84efdb53c73f715fad63203fed2f48f7d",
+    "reevaluate_identity_scaling_head_roi.py_sha256": "741ce0218089492d836ca6ed6faabf10f3c806130567bdabe1d3769c9ce9e071",
+    "launch_identity_scaling_target_region.sh_sha256": "5bad28707c5c478114b0d64defcbad21cf0426c70bc74c1e8b0276cf173898ca",
+    "frozen_before_smoke": true
+  },
+  "disclosure": "This control was designed after qualitative audit of the primary experiment and is labeled post-primary throughout. The original region analysis remains unchanged."
+}

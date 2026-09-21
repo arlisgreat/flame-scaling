@@ -1,0 +1,52 @@
+{
+  "kind": "identity_scaling_preregistered_protocol_snapshot",
+  "frozen_on": "2026-07-15-before-main-results",
+  "status_at_freeze": {
+    "main_run_count_completed": 0,
+    "engineering_scope": "single-identity renderer coverage and differentiability smoke tests only",
+    "cross_identity_test_metrics_viewed": false
+  },
+  "primary_matrix": {
+    "n_id": [8, 32, 128, 384],
+    "n_obs": [1, 4, 8],
+    "methods": ["hard", "adaptive150_sparse_gate", "released150"],
+    "equal_steps": 20000,
+    "training_seeds": [0, 1, 2],
+    "run_count": 36,
+    "fixed_isotropic_scale_mm": 5.0,
+    "validation_identities": 7,
+    "official_svfr_test_identities": 20,
+    "bootstrap_replicates": 10000,
+    "image_metrics": ["PSNR", "MAE", "SSIM", "AlexNet-LPIPS-spatial"],
+    "bootstrap_unit": "held-out identity after target-camera averaging and within-identity seed averaging"
+  },
+  "sensitivity_contract": {
+    "fixed_isotropic_scale_mm": 3.0,
+    "scaffold_flags_are_sensitivity_only": true,
+    "primary_analysis_keeps_every_preregistered_identity": true
+  },
+  "release_regularization": {
+    "normalized_offset_magnitude_weight": 0.01,
+    "flame_edge_offset_laplacian_weight": 2.0,
+    "adaptive_gate_l1_weight": 0.003,
+    "adaptive_gate_laplacian_weight": 0.1,
+    "reason": "pre-result continuity control preventing independent Gaussian jitter"
+  },
+  "sha256": {
+    "scripts/audit_nersemble_identity_scaling.py": "81b43f5b10a6d6a65457f6791c7a65f4e594060cbe4b95c23e79edfa90fbab72",
+    "scripts/prepare_nersemble_scale_subject.py": "47ab5417eb3c9514dfd656aa26f9625c837e7820a501af981c6694046a9869e3",
+    "scripts/run_identity_scaling.py": "eba5ed243a96349c84d69bfa2fb223373b7703ab50369d9171ef5bad56a5a639",
+    "scripts/analyze_identity_scaling.py": "8fee8504b06090fbca32f5e9f0a25bd1c0fc0b80a53686241bbfbae65886751c",
+    "scripts/analyze_nersemble_scale_cache.py": "374ceec6768299f6f945efe7e06c6835750a96b698bc9155f564e4d9f6083abb",
+    "scripts/launch_identity_scaling_matrix.sh": "453e15d4e4fd2677773c904c7029108727317ce5ef48905335b8f5768559e07c",
+    "configs/study.json": "60f8025dd328ccab362dc055b8b5266698a5a20d5587274cb6af5e59d7ec7c3c",
+    "docs/03_experiment_protocol.md": "802ffacb70bdc3a09ae8e37117ef3b255e144f47567829d474c28a554f15ed7b",
+    "docs/04_statistics_and_reporting.md": "c76c5f860d29763aca8cf3f0df99ee40e8ddbb93f7e7c844d9242444b0f7ab1f",
+    "artifacts/audits/nersemble_identity_scaling.json": "961064c4bc0558fa2c51d254807e173304565552a37aa928f23bc04406a1e037",
+    "artifacts/analysis/nersemble_scale_cache/cache_audit.json": "0bfc9a389ffcc158b6df25faaa2c314074e9e1b83e7f6333d7311172a2dca9f7",
+    "alexnet-owt-7be5be79.pth": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+    "lpips-v0.1-alex.pth": "df73285e35b22355a2df87cdb6b70b343713b667eddbda73e1977e0c860835c0",
+    "combined_415_npz_sha256_listing": "7f13cf400b29d0c2bbd2d223db78be7447e3a577f7685e0e52f1d7bf4a613496"
+  },
+  "scope_warning": "This snapshot freezes the public static G_mu proxy, not the final dynamic multi-dataset confirmatory study."
+}

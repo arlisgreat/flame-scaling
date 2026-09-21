@@ -1,0 +1,54 @@
+{
+  "kind": "post_primary_preregistered_population_density_control",
+  "frozen_at": "2026-07-16",
+  "status": "frozen before implementation and before observing any population-density-control result",
+  "motivation": "At fixed 5,023 slots, released queries cover unsupported regions by transporting points away from FLAME-supported detail. A 2x density control tests whether the observed coverage-sharpness frontier is a finite allocation effect or a more intrinsic release penalty.",
+  "intervention": {
+    "anchor": "Frozen identity_scaling20k_v1 at 5,023 slots",
+    "new_condition": "10,046 slots: all original FLAME vertices plus 5,023 deterministic topology-consistent barycentric surface samples",
+    "semantic_consistency": "The same face indices and barycentric coordinates are used for every identity; original vertices remain the first nested 5,023 slots.",
+    "smoothness_graph": "Original mesh edges plus edges from every added surface sample to its three parent triangle vertices.",
+    "region_assignment": "Added samples inherit each region only when at least two parent triangle vertices belong to that FLAME mask region.",
+    "parameter_matching": "hard, adaptive, and released are parameter-matched within 2x density. The 2x model intentionally has more slot embeddings than the 1x anchor; this is a representation-density intervention, not an equal-total-parameter capacity test.",
+    "unchanged": [
+      "NeRSemble identity splits and held-out cameras",
+      "full-frame training objective",
+      "5 mm fixed isotropic covariance",
+      "hidden dimension 128",
+      "20,000 optimization steps",
+      "G_mu radii and regularization",
+      "ordinary and head-ROI frozen-checkpoint evaluation"
+    ]
+  },
+  "matrix": {
+    "training_identities": [8, 384],
+    "methods": ["hard", "adaptive", "released"],
+    "seeds": [0, 1, 2],
+    "density_multiplier": 2,
+    "runs": 18
+  },
+  "primary_outcomes": [
+    "released-minus-hard head-supported PSNR and LPIPS at N_obs=4",
+    "released-minus-hard head-unsupported PSNR and LPIPS at N_obs=4",
+    "head-foreground quality versus mean displacement",
+    "change in the N_id=384 minus N_id=8 released advantage"
+  ],
+  "predictions": {
+    "finite_allocation_supported": "At 2x density, released head-supported PSNR/LPIPS loss shrinks relative to 1x while released head-unsupported gain remains positive.",
+    "support_ceiling_supported": "Hard 2x gains less from identity scaling on head-unsupported content than released 2x and does not erase the released advantage.",
+    "crossover_shift": "More slots move the head-foreground crossover toward fewer identities or increase the released advantage at N_id=8."
+  },
+  "falsifiers": [
+    "If 2x density leaves the released supported-detail penalty unchanged, simple point-budget dilution is not a sufficient mechanism.",
+    "If hard 2x eliminates the head-unsupported released advantage, the 1x ceiling was primarily sampling density rather than FLAME support.",
+    "If both hard and released improve equally and their scaling interaction is unchanged, density is orthogonal to the identified phase boundary at this range."
+  ],
+  "paired_inference": "Average target cameras and training seeds within each held-out identity, then perform a 10,000-sample identity bootstrap.",
+  "implementation_fingerprint": {
+    "run_identity_scaling.py_sha256": "63af95d03eb769cdb85cb64afd5483f84efdb53c73f715fad63203fed2f48f7d",
+    "reevaluate_identity_scaling_head_roi.py_sha256": "741ce0218089492d836ca6ed6faabf10f3c806130567bdabe1d3769c9ce9e071",
+    "launch_identity_scaling_density2.sh_sha256": "ef6370bd4d778d7ec66efd13c696277127db5542f11e351d9c2117799312ee12",
+    "frozen_before_smoke": true
+  },
+  "disclosure": "Designed after the 1x primary result and reported as a post-primary mechanism control."
+}

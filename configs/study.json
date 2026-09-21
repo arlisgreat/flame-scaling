@@ -1,0 +1,109 @@
+{
+  "study_name": "flame_shortcut_or_ceiling_v0",
+  "frozen_on": "2026-07-15",
+  "paired_seeds": [0, 1, 2],
+  "main": {
+    "identity_counts": [32, 128, 512, 2048],
+    "observations_per_identity": [16],
+    "capacities": ["S", "M", "L"],
+    "methods": ["hard", "free", "apr"],
+    "split_id": "nested_identities_v0"
+  },
+  "observation_scan": {
+    "identity_counts": [128, 2048],
+    "observations_per_identity": [1, 4, 16, 64],
+    "capacities": ["M"],
+    "methods": ["hard", "free", "apr"],
+    "split_id": "nested_observations_v0"
+  },
+  "nersemble_static_proxy": {
+    "frozen_on": "2026-07-15-before-results",
+    "sequence": "FREE",
+    "identity_counts": [8, 32, 128, 384],
+    "observations_per_identity": [1, 4, 8],
+    "methods": ["hard", "adaptive150_sparse_gate", "released150"],
+    "train_identity_count_available": 391,
+    "validation_identity_count": 7,
+    "official_svfr_test_identity_count": 20,
+    "common_camera_count": 15,
+    "gaussian_count": 5023,
+    "fixed_isotropic_scale_mm": 5.0,
+    "fixed_scale_sensitivity_mm": 3.0,
+    "equal_steps": 20000,
+    "training_seeds": [0, 1, 2],
+    "primary_run_count": 36,
+    "bootstrap_seed": 20260715,
+    "bootstrap_replicates": 10000,
+    "scope": "static multiview-oracle G_mu proxy; retains C and FLAME initialization"
+  },
+  "role_isolates": {
+    "identity_counts": [32, 512, 2048],
+    "observations_per_identity": [16],
+    "capacities": ["M"],
+    "methods": [
+      "hard",
+      "release_g",
+      "release_c",
+      "release_a",
+      "release_p",
+      "release_gc",
+      "release_ga",
+      "release_ap",
+      "free"
+    ],
+    "split_id": "role_anchors_v0"
+  },
+  "role_states": {
+    "hard": ["hard", "hard", "hard", "hard"],
+    "release_g": ["free", "hard", "hard", "hard"],
+    "release_c": ["hard", "free", "hard", "hard"],
+    "release_a": ["hard", "hard", "free", "hard"],
+    "release_p": ["hard", "hard", "hard", "selfcal"],
+    "release_gc": ["free", "free", "hard", "hard"],
+    "release_ga": ["free", "hard", "free", "hard"],
+    "release_ap": ["hard", "hard", "free", "selfcal"],
+    "free": ["free", "free", "free", "selfcal"],
+    "apr": ["adaptive", "adaptive", "adaptive", "adaptive"]
+  },
+  "oracle": {
+    "offset_radius_mm": [0, 2, 5, 10, 25, -1],
+    "regions": [
+      "stable_skin",
+      "eyes",
+      "lips",
+      "teeth",
+      "tongue",
+      "dynamic_wrinkles",
+      "ears",
+      "hair_beard",
+      "accessories",
+      "neck_shoulders"
+    ],
+    "sequence_families": [
+      "EXP-2-eyes",
+      "EXP-4-lips",
+      "EXP-5-mouth",
+      "EXP-6-tongue-1",
+      "EXP-7-tongue-2",
+      "EXP-8-jaw-1",
+      "EXP-9-jaw-2",
+      "emotion",
+      "speech"
+    ]
+  },
+  "primary_endpoints": {
+    "metrics": ["lpips", "dists", "geometry_error", "mv_consistency"],
+    "region_groups": ["stable_skin", "tongue_oral", "hair_dynamic_detail"],
+    "yaw_bins_degrees": [[0, 30], [30, 60], [60, 180]],
+    "fdr_q": 0.05,
+    "bootstrap_replicates": 10000
+  },
+  "budget_invariants": [
+    "same_gaussian_count",
+    "same_total_parameters",
+    "same_train_tokens",
+    "same_input_evidence",
+    "same_renderer_and_resolution",
+    "paired_identity_split_and_seed"
+  ]
+}

@@ -1,0 +1,17 @@
+ci_high,ci_low,control_minus_reference_mean,control_variant,geometry_metric,identity_count,method,n_id,n_obs,reference_variant
+-9.911222696701685,-14.865980058113735,-12.525532881418865,head_target_density1,all_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-14.661311216354374,-21.159330317179364,-18.109977372487386,head_target_density1,all_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-4.296276107231774,-8.490050084988274,-6.540321254730223,full_target_density2,all_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-5.982149274349213,-10.981602880160013,-8.600924030939739,full_target_density2,all_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-4.4435867468516035,-8.173888379732766,-6.379827547073363,head_target_density1,face_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-5.812834157943726,-9.89934951663017,-7.90339986483256,head_target_density1,face_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-3.8080053404967,-7.630333424806595,-5.806127325693767,full_target_density2,face_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-3.6560305150349937,-7.132226500113806,-5.472002426783243,full_target_density2,face_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-62.87152997175853,-89.32264083703359,-76.97735252380372,head_target_density1,neck_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-68.18624923586844,-93.13714841445287,-81.36803234418234,head_target_density1,neck_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-19.73797311464946,-36.7310232202212,-29.137701479593915,full_target_density2,neck_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-24.184177503585815,-42.662360686461135,-34.03801342646281,full_target_density2,neck_offset_mean_mm,20,released,384,4,primary_full_target_density1
+-24.47628650824229,-36.91626472274463,-31.090336036682125,head_target_density1,scalp_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-27.7769328268369,-40.140174865722656,-34.43493941624959,head_target_density1,scalp_offset_mean_mm,20,released,384,4,primary_full_target_density1
+3.369794390598932,-2.627606136401494,0.1995470364888515,full_target_density2,scalp_offset_mean_mm,20,adaptive,384,4,primary_full_target_density1
+-3.5068695783615085,-11.11471120993296,-7.506598472595212,full_target_density2,scalp_offset_mean_mm,20,released,384,4,primary_full_target_density1
